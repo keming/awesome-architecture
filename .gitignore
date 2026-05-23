@@ -6,3 +6,9 @@
 .idea/
 *.swp
 *~
+
+# Node / VitePress
+node_modules/
+.vitepress/dist/
+.vitepress/cache/
+*.log
