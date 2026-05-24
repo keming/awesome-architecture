@@ -57,6 +57,7 @@ Not "how to use framework X", but a transferable way of thinking: how to turn a 
 | [06](tutorial/06-质量属性与取舍.md) | Quality attributes & trade-offs | Performance / availability / consistency / cost — how to weigh them |
 | [07](tutorial/07-从0到1设计一个系统.md) | Designing a system from 0 to 1 | A step-by-step methodology you can actually follow |
 | [08](tutorial/08-架构决策记录与演进.md) | ADRs & evolution | Record decisions with ADRs and let architecture grow with the business |
+| [09](tutorial/09-架构品味.md) | Architectural taste | What separates good architects beyond the framework; grow judgment via real cases (microservices→monolith, big-company tastes) |
 
 > 👉 **New here? Start with [tutorial/README.md](tutorial/README.md)** for the full learning path.
 
