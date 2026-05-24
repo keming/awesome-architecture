@@ -46,9 +46,9 @@ export default defineConfig({
   description: '专注「架构思维」的中文知识库:8 章教程 + 21 张真实系统架构地图。',
   lang: 'zh-Hans',
   cleanUrls: true,
-  ignoreDeadLinks: true,
+  ignoreDeadLinks: false,
   lastUpdated: true,
-  srcExclude: ['README.md', 'README_en.md'],
+  srcExclude: [],
   head: [
     ['meta', { name: 'theme-color', content: '#3c8772' }],
     ['meta', { property: 'og:title', content: 'Awesome Architecture · 架构图谱' }],
