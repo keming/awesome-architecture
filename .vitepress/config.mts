@@ -43,9 +43,16 @@ const zhAI = [
   { text: '向量数据库', link: '/templates/vector-database/README' },
 ]
 
+const zhAgent = [
+  { text: 'Claude Code', link: '/templates/claude-code/README' },
+  { text: 'OpenAI Codex', link: '/templates/codex/README' },
+  { text: 'OpenClaw(龙虾)', link: '/templates/openclaw/README' },
+  { text: 'Hermes(爱马仕)', link: '/templates/hermes/README' },
+]
+
 export default defineConfig({
   title: 'Awesome Architecture',
-  description: '专注「架构思维」的中文知识库:8 章教程 + 21 张真实系统架构地图。',
+  description: '专注「架构思维」的中文知识库:8 章教程 + 25 张真实系统架构地图。',
   lang: 'zh-Hans',
   base: process.env.GITHUB_PAGES ? '/awesome-architecture/' : '/',
   cleanUrls: true,
@@ -55,7 +62,7 @@ export default defineConfig({
   head: [
     ['meta', { name: 'theme-color', content: '#3c8772' }],
     ['meta', { property: 'og:title', content: 'Awesome Architecture · 架构图谱' }],
-    ['meta', { property: 'og:description', content: '像架构师一样思考:8 章教程 + 21 张真实系统架构地图。' }],
+    ['meta', { property: 'og:description', content: '像架构师一样思考:8 章教程 + 25 张真实系统架构地图。' }],
     // Hypothesis 划词标注:选中正文文字即可高亮 + 评论,标注持久化、所有访客可见
     ['script', { src: 'https://hypothes.is/embed.js', async: '' }],
   ],
@@ -82,11 +89,13 @@ export default defineConfig({
           '/templates/': [
             { text: '🗺️ 经典 / 通用系统', items: zhCommon },
             { text: '🤖 AI 原生系统', items: zhAI },
+            { text: '🦾 AI 编码 / 自治 Agent', items: zhAgent },
           ],
           '/': [
             { text: '📚 教程', collapsed: false, items: zhTutorial },
             { text: '🗺️ 经典 / 通用系统', collapsed: true, items: zhCommon },
             { text: '🤖 AI 原生系统', collapsed: true, items: zhAI },
+            { text: '🦾 AI 编码 / 自治 Agent', collapsed: true, items: zhAgent },
           ],
         },
         outline: { label: '本页大纲', level: [2, 3] },
@@ -159,6 +168,16 @@ export default defineConfig({
                 { text: 'AI Agent / Workflow', link: '/en/templates/ai-agent-platform/README' },
                 { text: 'Inference Serving', link: '/en/templates/inference-serving/README' },
                 { text: 'Vector Database', link: '/en/templates/vector-database/README' },
+              ],
+            },
+            {
+              text: '🦾 Templates · AI Coding & Autonomous Agents',
+              collapsed: true,
+              items: [
+                { text: 'Claude Code', link: '/en/templates/claude-code/README' },
+                { text: 'OpenAI Codex', link: '/en/templates/codex/README' },
+                { text: 'OpenClaw (the lobster)', link: '/en/templates/openclaw/README' },
+                { text: 'Hermes', link: '/en/templates/hermes/README' },
               ],
             },
           ],

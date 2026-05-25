@@ -2,7 +2,7 @@
 import { ref, computed } from 'vue'
 import { withBase } from 'vitepress'
 
-interface Item { name: string; icon: string; cat: 'common' | 'ai'; desc: string; link: string }
+interface Item { name: string; icon: string; cat: 'common' | 'ai' | 'agent'; desc: string; link: string }
 
 const items: Item[] = [
   { name: 'AI 对话产品', icon: '🤖', cat: 'common', desc: 'LLM 推理 · 流式 · 上下文 · 成本', link: '/templates/ai-chat-product/README' },
@@ -26,14 +26,19 @@ const items: Item[] = [
   { name: 'AI Agent / 工作流', icon: '🤹', cat: 'ai', desc: '行动循环 · 工具 · 记忆', link: '/templates/ai-agent-platform/README' },
   { name: '模型推理服务', icon: '⚡', cat: 'ai', desc: '连续批处理 · 分页 KV', link: '/templates/inference-serving/README' },
   { name: '向量数据库', icon: '🧭', cat: 'ai', desc: 'ANN · HNSW · 相似检索', link: '/templates/vector-database/README' },
+  { name: 'Claude Code', icon: '🖥️', cat: 'agent', desc: '本地优先编码 · 子代理/钩子/MCP · 双层权限', link: '/templates/claude-code/README' },
+  { name: 'OpenAI Codex', icon: '🛰️', cat: 'agent', desc: '本地 CLI + 云端沙箱 · 异步开 PR · 双轴安全', link: '/templates/codex/README' },
+  { name: 'OpenClaw(龙虾)', icon: '🦞', cat: 'agent', desc: '自托管网关 · 聊天软件即 UI · 常驻', link: '/templates/openclaw/README' },
+  { name: 'Hermes(爱马仕)', icon: '🧠', cat: 'agent', desc: 'FTS5 持久记忆 · 自动沉淀技能 · 常驻', link: '/templates/hermes/README' },
 ]
 
-const filter = ref<'all' | 'common' | 'ai'>('all')
+const filter = ref<'all' | 'common' | 'ai' | 'agent'>('all')
 const filtered = computed(() => (filter.value === 'all' ? items : items.filter((i) => i.cat === filter.value)))
 const tabs = [
-  { k: 'all', t: '全部 21' },
+  { k: 'all', t: '全部 25' },
   { k: 'common', t: '🗺️ 经典 / 通用' },
   { k: 'ai', t: '🤖 AI 原生' },
+  { k: 'agent', t: '🦾 编码 / 自治 Agent' },
 ] as const
 </script>
 
@@ -52,7 +57,7 @@ const tabs = [
         <div class="ax-ic">{{ it.icon }}</div>
         <div class="ax-name">{{ it.name }}</div>
         <div class="ax-desc">{{ it.desc }}</div>
-        <span class="ax-tag" :class="it.cat">{{ it.cat === 'ai' ? 'AI' : '通用' }}</span>
+        <span class="ax-tag" :class="it.cat">{{ it.cat === 'ai' ? 'AI' : it.cat === 'agent' ? 'Agent' : '通用' }}</span>
       </a>
     </div>
   </div>
@@ -82,4 +87,5 @@ const tabs = [
   padding: 2px 8px; border-radius: 10px; background: var(--vp-c-default-soft); color: var(--vp-c-text-2);
 }
 .ax-tag.ai { background: rgba(60, 135, 114, 0.16); color: var(--vp-c-brand-1); }
+.ax-tag.agent { background: rgba(200, 134, 13, 0.16); color: #b9770e; }
 </style>

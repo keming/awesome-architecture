@@ -96,9 +96,18 @@ Each template is an "architecture map". We **deliberately avoid discussing langu
 | [Inference Serving](templates/inference-serving/README.md) | vLLM, SGLang, Triton | Continuous batching, paged KV cache, quantization |
 | [Vector Database](templates/vector-database/README.md) | Milvus, Qdrant, pgvector | ANN, HNSW/IVF, recall–latency trade-off |
 
+**🦾 AI Coding & Autonomous Agents** (new — real, in-the-wild agent product architectures)
+
+| Template | Representative products / prototypes | Key architecture themes |
+|---|---|---|
+| [Claude Code](templates/claude-code/README.md) | Claude Code (Anthropic) | Local-first coding agent; subagents/hooks/skills/MCP; two-tier permissions + OS sandbox; context compaction |
+| [OpenAI Codex](templates/codex/README.md) | Codex CLI + Cloud | Local CLI & cloud async sandbox; sandbox × approval axes; offline-by-default anti-injection; opens PRs |
+| [OpenClaw (the lobster 🦞)](templates/openclaw/README.md) | OpenClaw (formerly Clawdbot) | Self-hosted gateway; chat apps as the UI; heartbeat/cron; pluggable harness; memory as plain text |
+| [Hermes](templates/hermes/README.md) | Hermes (Nous Research) | Always-on & self-growing; FTS5 persistent memory; auto-distilled skills; cron; multi-channel/provider |
+
 > 👉 **Want to add your own template?** Follow the unified format in [templates/_TEMPLATE.md](templates/_TEMPLATE.md).
 
-> 📝 **Now fully bilingual** — all **9 tutorial chapters and 21 templates** are available in English. Use the language switch (top-right on the site), or browse `en/` in the repo.
+> 📝 **Now fully bilingual** — all **9 tutorial chapters and 25 templates** are available in English. Use the language switch (top-right on the site), or browse `en/` in the repo.
 
 ---
 

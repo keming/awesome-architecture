@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "Awesome Architecture"
   text: "Think like an architect"
-  tagline: "Writing code is disappearing; judgment is what's getting valuable. 8 chapters on architectural thinking + 21 architecture maps of real systems — architecture only, no syntax."
+  tagline: "Writing code is disappearing; judgment is what's getting valuable. 8 chapters on architectural thinking + 25 architecture maps of real systems — architecture only, no syntax."
   actions:
     - theme: brand
       text: Browse in 中文 →
@@ -18,7 +18,7 @@ features:
     title: Judgment, not syntax
     details: No language or framework. A transferable, durable way of thinking — requirements → constraints → quality attributes → trade-offs.
   - icon: 🗺️
-    title: 21 architecture maps
+    title: 25 architecture maps
     details: From e-commerce, social feeds, chat and video to AI gateways, RAG and inference serving — each explains why it's built that way and where it breaks.
   - icon: ⚖️
     title: Decisions & trade-offs first

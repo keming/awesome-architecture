@@ -7,7 +7,7 @@
 
 ## 模板清单
 
-> 共 **21** 个模板:16 个经典 / 通用系统 + 5 个 AI 原生系统(LLM 时代新增)。每个模板都附**真实开源项目 / 工程文档链接**(见各模板末尾「参考原型与延伸阅读」)。
+> 共 **25** 个模板:16 个经典 / 通用系统 + 5 个 AI 原生系统 + 4 个 AI 编码 / 自治 Agent(LLM 时代新增)。每个模板都附**真实开源项目 / 工程文档链接**(见各模板末尾「参考原型与延伸阅读」)。
 
 ### 经典 / 通用系统
 
@@ -39,6 +39,15 @@
 | [AI Agent / 工作流](ai-agent-platform/README.md) | Dify、Coze、LangGraph | 让模型规划→调工具→观察→再决策 | 行动循环、工具沙箱、记忆、可控兜底 |
 | [模型推理服务](inference-serving/README.md) | vLLM、SGLang、Triton | 在 GPU 上把模型榨到最高吞吐 | 连续批处理、分页 KV、量化、多副本 |
 | [向量数据库](vector-database/README.md) | Milvus、Qdrant、pgvector | 海量高维向量的毫秒级相似检索 | ANN、HNSW/IVF、召回-延迟权衡 |
+
+### 🦾 AI 编码 / 自治 Agent(2026 新增)
+
+| 模板 | 代表产品 / 原型 | 一句话定位 | 核心看点 |
+|---|---|---|---|
+| [Claude Code](claude-code/README.md) | Claude Code(Anthropic) | 把 Claude 装进终端的本地优先编码 agent | 自治循环、子代理/钩子/MCP、双层权限 + OS 沙箱、上下文压缩 |
+| [OpenAI Codex](codex/README.md) | Codex CLI + Cloud | 同一内核:本地实时结对 + 云端异步跑完开 PR | 双形态、沙箱 × 审批双轴、内核级隔离、默认断网 |
+| [OpenClaw(龙虾 🦞)](openclaw/README.md) | OpenClaw(原 Clawdbot/Moltbot) | 自托管常驻、把 agent 接到你在用的聊天软件 | 单进程 Gateway、消息平台即 UI、心跳 / cron、可插拔 harness |
+| [Hermes(爱马仕)](hermes/README.md) | Hermes(Nous Research) | 跟你一起成长的自托管常驻智能体 | FTS5 持久记忆、自动沉淀技能、cron、多渠道 / 多 provider |
 
 ---
 
