@@ -59,6 +59,19 @@ Not "how to use framework X", but a transferable way of thinking: how to turn a 
 | [08](tutorial/08-架构决策记录与演进.md) | ADRs & evolution | Record decisions with ADRs and let architecture grow with the business |
 | [09](tutorial/09-架构品味.md) | Architectural taste | What separates good architects beyond the framework; grow judgment via real cases (microservices→monolith, big-company tastes) |
 
+**🚀 Advanced track (10–17, new) — taming the hard rock that bites once a system gets big or critical:**
+
+| Ch. | Topic | What you'll tame |
+|---|---|---|
+| [10](tutorial/10-分布式系统的硬道理.md) | Distributed systems: the hard truths | Partial failure, no global clock, the cost of consensus, the exactly-once illusion |
+| [11](tutorial/11-数据一致性工程.md) | The engineering of data consistency | Saga, Outbox, idempotency, event sourcing, CQRS |
+| [12](tutorial/12-为失败而设计.md) | Designing for failure: resilience | Cascading failure, circuit breakers, bulkheads, load shedding, SLOs, chaos |
+| [13](tutorial/13-规模化的力学.md) | The mechanics of scale | Consistent hashing, hot keys, multi-region, tail latency & fan-out |
+| [14](tutorial/14-演进与拆分大型系统.md) | Evolving & splitting large systems | Strangler fig, parallel run, zero-downtime migration, splitting the monolith |
+| [15](tutorial/15-组织即架构.md) | Organization as architecture | Conway / inverse Conway, Team Topologies, platform engineering |
+| [16](tutorial/16-安全与多租户架构.md) | Security & multi-tenancy | Threat modeling, zero trust, blast radius, tenant isolation |
+| [17](tutorial/17-大模型时代的架构判断.md) | Architecting in the age of LLMs | Vibe coding, nondeterminism, context engineering, agentic hard parts |
+
 > 👉 **New here? Start with [tutorial/README.md](tutorial/README.md)** for the full learning path.
 
 ### 🗺️ templates/ — Architecture maps of real systems
@@ -107,7 +120,7 @@ Each template is an "architecture map". We **deliberately avoid discussing langu
 
 > 👉 **Want to add your own template?** Follow the unified format in [templates/_TEMPLATE.md](templates/_TEMPLATE.md).
 
-> 📝 **Now fully bilingual** — all **9 tutorial chapters and 25 templates** are available in English. Use the language switch (top-right on the site), or browse `en/` in the repo.
+> 📝 **Now fully bilingual** — all **17 tutorial chapters and 25 templates** are available in English. Use the language switch (top-right on the site), or browse `en/` in the repo.
 
 ---
 

@@ -22,6 +22,9 @@ const zhTutorialAdvanced = [
   { text: '12 · 为失败而设计:韧性工程', link: '/tutorial/12-为失败而设计' },
   { text: '13 · 规模化的力学', link: '/tutorial/13-规模化的力学' },
   { text: '14 · 演进与拆分大型系统', link: '/tutorial/14-演进与拆分大型系统' },
+  { text: '15 · 组织即架构', link: '/tutorial/15-组织即架构' },
+  { text: '16 · 安全与多租户架构', link: '/tutorial/16-安全与多租户架构' },
+  { text: '17 · 大模型时代的架构判断', link: '/tutorial/17-大模型时代的架构判断' },
 ]
 
 const zhCommon = [
@@ -60,7 +63,7 @@ const zhAgent = [
 
 export default defineConfig({
   title: 'Awesome Architecture',
-  description: '专注「架构思维」的中文知识库:14 章教程(入门 + 进阶)+ 25 张真实系统架构地图。',
+  description: '专注「架构思维」的中文知识库:17 章教程(入门 + 进阶)+ 25 张真实系统架构地图。',
   lang: 'zh-Hans',
   base: process.env.GITHUB_PAGES ? '/awesome-architecture/' : '/',
   cleanUrls: true,
@@ -70,7 +73,7 @@ export default defineConfig({
   head: [
     ['meta', { name: 'theme-color', content: '#3c8772' }],
     ['meta', { property: 'og:title', content: 'Awesome Architecture · 架构图谱' }],
-    ['meta', { property: 'og:description', content: '像架构师一样思考:14 章教程(入门 + 进阶)+ 25 张真实系统架构地图。' }],
+    ['meta', { property: 'og:description', content: '像架构师一样思考:17 章教程(入门 + 进阶)+ 25 张真实系统架构地图。' }],
     // Hypothesis 划词标注:选中正文文字即可高亮 + 评论,标注持久化、所有访客可见
     ['script', { src: 'https://hypothes.is/embed.js', async: '' }],
   ],
@@ -158,6 +161,9 @@ export default defineConfig({
                 { text: '12 · Designing for failure: resilience', link: '/en/tutorial/12-为失败而设计' },
                 { text: '13 · The mechanics of scale', link: '/en/tutorial/13-规模化的力学' },
                 { text: '14 · Evolving & splitting large systems', link: '/en/tutorial/14-演进与拆分大型系统' },
+                { text: '15 · Organization as architecture', link: '/en/tutorial/15-组织即架构' },
+                { text: '16 · Security & multi-tenancy', link: '/en/tutorial/16-安全与多租户架构' },
+                { text: '17 · Architecting in the age of LLMs', link: '/en/tutorial/17-大模型时代的架构判断' },
               ],
             },
             {
